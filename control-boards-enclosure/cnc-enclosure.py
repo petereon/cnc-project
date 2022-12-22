@@ -3,9 +3,9 @@ from solid.utils import *  # Not required, but the utils module is useful
 import os
 
 bottom = cube([130, 105, 2])
-leg = cylinder(1.3, 10, segments=50) + cylinder(2.5, 5, segments=50)
+leg = cylinder(3, 7, segments=50) - cylinder(1.2, 10, segments=50)
 
-screw_hole = translate([0,0,-0.05])(cylinder(h=2.1, r1=2, r2=4, segments=50))
+screw_hole = translate([0,0,-0.05])(cylinder(h=2.1, r1=1.5, r2=3, segments=50))
 
 motor_driver_holder = leg + translate([27,0,0])(leg) + translate([27,30,0])(leg) + translate([0,30,0])(leg)
 
