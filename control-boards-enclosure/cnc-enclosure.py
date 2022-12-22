@@ -2,10 +2,10 @@ from solid import *
 from solid.utils import *  # Not required, but the utils module is useful
 import os
 
-arduino = import_stl(os.path.join(os.path.dirname(os.path.realpath(__file__)), "Arduino.stl"))
-
 bottom = cube([130, 105, 2])
 leg = cylinder(1.3, 10, segments=50) + cylinder(2.5, 5, segments=50)
+
+screw_hole = translate([0,0,-0.05])(cylinder(h=2.1, r1=2, r2=4, segments=50))
 
 motor_driver_holder = leg + translate([27,0,0])(leg) + translate([27,30,0])(leg) + translate([0,30,0])(leg)
 
@@ -16,16 +16,28 @@ piece = (
     + translate([17,7,0])(
         arduino_holder
     ) 
-    + translate([10,67,0])(
+    + translate([13,67,0])(
         motor_driver_holder
     ) 
     + translate([50,67,0])(
         motor_driver_holder
     ) 
-    + translate([90,67,0])(
+    + translate([87,67,0])(
         motor_driver_holder
-    ) 
-    # + translate([2,0,0])(translate([1.5,58,10])(rotate([0,0,-90])(arduino)))
+    )
+    - translate([6,6,0])(
+        screw_hole
+    )
+    - translate([124,6,0])(
+        screw_hole
+    )
+    - translate([6,99,0])(
+        screw_hole
+    )
+    - translate([124,99,0])(
+        screw_hole
+    )
+
 )
 
 
