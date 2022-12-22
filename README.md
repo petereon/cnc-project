@@ -28,13 +28,13 @@ If would like to change direction, you can switch position within one group (e.g
 IO corrspondence figure:
 ```
 UNO ---------------------- expansion board
-8 ------------------------ EN ( stepper motor driver enable , active low )
-7 ----------------------- Z.DIR (Z -axis direction control )
-6 ----------------------- Y.DIR (Y -axis direction control )
-5 ----------------------- X.DIR (X -axis direction control )
-4 ---------------------- Z.STEP (Z -axis stepper control )
-3 ---------------------- Y.STEP (Y -axis stepper control )
-2 ---------------------- X.STEP (X -axis stepper control )
+8   ---------------------- EN ( stepper motor driver enable , active low )
+7   ---------------------- Z.DIR (Z -axis direction control )
+6   ---------------------- Y.DIR (Y -axis direction control )
+5   ---------------------- X.DIR (X -axis direction control )
+4   ---------------------- Z.STEP (Z -axis stepper control )
+3   ---------------------- Y.STEP (Y -axis stepper control )
+2   ---------------------- X.STEP (X -axis stepper control )
 ```
 
 The following is a simple stepper motor control procedure:
