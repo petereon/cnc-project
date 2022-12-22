@@ -1,18 +1,27 @@
 # Introduction
 
 This project is in very early stages, but it will no doubt end up to be a mess of a lot of stuff. Main expected subgroups are:
-- `SolidPython` "declarations" of the 3D Printed components
+- [`SolidPython`](https://github.com/SolidCode/SolidPython) "declarations" of the 3D Printed components
 - Arduino C++ plumbing between electronic components
 
-## Documentation Excerpt taken from the AliExpress for the Uno CNC Shield
+## Documentation Excerpt taken from the [AliExpress for the Uno CNC Shield](https://www.aliexpress.com/item/33045612148.html?spm=a2g0o.order_list.order_list_main.17.21ef1802zo7djo)
+
+> :information_source: I have taken a liberty to groom this a little bit for my use
 
 ### V3 Shield:
 
 #### Introduction
 This expansion board as a driver expansion board, can be used for engraving machines, 3D printers.
-It is a total of four slots, can drive four A4988 stepper motors. Each stepper motor only needs two IO ports. In other words, six IO ports can be well managed three stepper motors. Very convenient to use.
+It is a total of four slots, can drive four A4988 stepper motors. Each stepper motor only needs two IO ports. In other words, six IO ports can be well managed three stepper motors.
 
-> Note: When inserting the A4988 module, must be careful not to insert opposite. Stepper motor wiring as follows: 2A, 2B is a group (red, green), 1A, 1B is a group (blue, yellow), if want to change direction, can be change the position of one group, for example 2A, 2B mutually exchanged.
+> :warning: When inserting the A4988 module, must be careful not to insert opposite. 
+
+Stepper motor wiring is as follows:
+
+- 2A, 2B is a group (red, green), 
+- 1A, 1B is a group (blue, yellow) 
+
+If would like to change direction, you can switch position within one group (e.g. 2A, 2B exchanged).
 
 #### UNO module IO port correspondence introduction.
 
